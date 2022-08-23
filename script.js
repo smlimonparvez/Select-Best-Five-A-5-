@@ -15,6 +15,7 @@ const playerArray = [];
 function display(playerName) {
     const tableBody = document.getElementById('player-list');
     tableBody.innerHTML = '';
+
     for (let i = 0; i < playerName.length; i++) {
         const name = playerArray[i].playerName;
         const tr = document.createElement('tr');
@@ -23,6 +24,13 @@ function display(playerName) {
         <td>${name}</td>
         `;
         tableBody.appendChild(tr);
+    }
+
+    if (playerArray.length > 5) {
+        alert("You can only select 5 players");
+        playerArray.pop();
+        console.log(playerArray.pop());
+        return;
     }
 }
 
@@ -33,6 +41,13 @@ function addToPlayerList(element) {
     playerArray.push(playerObj);
     display(playerArray);
 }
+
+// if (players.length > 5) {
+//     alert("You can only select 5 players");
+//     players.pop(); // remove last player from array
+//     console.log(players.pop());
+//     return;
+//   }
 
 
 /***********************************Budget section*************************************/
