@@ -9,8 +9,35 @@ function myFunction() {
 }
 
 // Selected-V
+const playerArray = [];
 
+function display(playerName){
+    const tableBody = document.getElementById('player-list');
+    tableBody.innerHTML = '';
+    for(let i = 0; i < playerName.length; i++){
+        // console.log(playerArray[i].playerName);
+        const name = playerArray[i].playerName;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+        <th>${i + 1}</th>
+        <td>${name}</td>
+        `;
+        tableBody.appendChild(tr);
+    }
+}
 
+function addToPlayerList(element){
+    // console.log(element.parentNode.parentNode.children)
+    // console.log(element.parentNode.parentNode.children[1].innerText)
+    const playerName = element.parentNode.parentNode.children[1].innerText;
+    // console.log(playerName);
+    const playerObj = {playerName: playerName}
+    playerArray.push(playerObj);
+    // console.log(playerArray);
+    // playerArray.push(playerName);
+    // console.log(playerArray); 
+    display(playerArray);
+}
 
 // Budget section
 function fivePlayerExpenses() {

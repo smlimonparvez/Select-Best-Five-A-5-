@@ -71,7 +71,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn1" class="btn">SELECT</button>
+                            <button id="select-btn1" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -83,7 +83,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -95,7 +95,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -107,7 +107,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -119,7 +119,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -131,7 +131,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -143,7 +143,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -155,7 +155,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -167,7 +167,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -179,7 +179,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -191,7 +191,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     
@@ -204,7 +204,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn" class="btn">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                 </article>
@@ -214,9 +214,11 @@
                     <div class="sidebar1">
                         <h2>Selected-V</h2>
                         <hr>
-                       <div class="player-list">
+                       <table>
+                        <tbody id="player-list">
 
-                       </div>
+                        </tbody>
+                       </table>
                     </div>
                     <!------------------------------------- Budget section ----------------------------->
                     <div class="sidebar2">
