@@ -71,7 +71,7 @@
                             <p>33 Assist</p>
                         </div>
                         <div class="card-btn">
-                            <button id="select-btn1" class="btn" onclick="addToPlayerList(this)">SELECT</button>
+                            <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
                     <div class="card-item">
@@ -194,7 +194,7 @@
                             <button id="select-btn" class="btn" onclick="addToPlayerList(this)">SELECT</button>
                         </div>
                     </div>
-                    
+
                     <div class="card-item">
                         <img class="card-img" src="images/vitinha-r.jpg" alt="">
                         <h2 id="player-name">Vitinha</h2>
@@ -214,10 +214,10 @@
                     <div class="sidebar1">
                         <h2>Selected-V</h2>
                         <hr>
-                       <table>
-                        <tbody id="player-list">
-                        </tbody>
-                       </table>
+                        <table>
+                            <tbody id="player-list">
+                            </tbody>
+                        </table>
                     </div>
                     <!------------------------------------- Budget section ----------------------------->
                     <div class="sidebar2">
@@ -225,7 +225,7 @@
                         <hr>
                         <div class="sidebar2-flexitem">
                             <p>Per Player-</p>
-                            <input id="per-player" type="number" placeholder="">
+                            <input id="per-player" type="number" placeholder="$5000">
                         </div>
                         <div class="side-btn">
                             <button id="calc1-btn" class="sidebar-btn">Calculate</button>
@@ -236,18 +236,18 @@
                         </div>
                         <div class="sidebar2-flexitem">
                             <p>Maneger-</p>
-                            <input id="manager-expense" type="number">
+                            <input id="manager-expense" type="number" placeholder="$1000">
                         </div>
                         <div class="sidebar2-flexitem">
                             <p>Coach-</p>
-                            <input id="coach-expense" type="number">
+                            <input id="coach-expense" type="number" placeholder="$1000">
                         </div>
                         <div class="side-btn">
                             <button id="calc2-btn" class="sidebar-btn">Calculate Total</button>
                         </div>
                         <div class="sidebar2-flexitem">
                             <p>Total</p>
-                        <h2>$<span id="total-expenses">00</span></h2>
+                            <h2>$<span id="total-expenses">00</span></h2>
                         </div>
                     </div>
                 </aside>

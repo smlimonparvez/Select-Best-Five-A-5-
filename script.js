@@ -11,6 +11,7 @@ function myFunction() {
 /************************************Selected-V*****************************************/
 
 const playerArray = [];
+
 function display(playerName) {
     const tableBody = document.getElementById('player-list');
     tableBody.innerHTML = '';

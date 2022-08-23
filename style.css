@@ -249,7 +249,7 @@ section.container {
     color: goldenrod;
 }
 
-td{
+td {
     padding: 10px;
 }
 
@@ -277,6 +277,7 @@ input[type=number] {
     color: #ddd;
     border: 1px solid #ddd;
     border-radius: 2px;
+    padding-left: 10px;
 }
 
 .side-btn {
@@ -388,7 +389,7 @@ input[type=number] {
         margin-bottom: 30px;
     }
 
-    .header-content{
+    .header-content {
         top: 55%;
     }
 }
