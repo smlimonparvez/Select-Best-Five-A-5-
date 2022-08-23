@@ -27,6 +27,7 @@ function display(playerName) {
 }
 
 function addToPlayerList(element) {
+    element.disabled = true;
     const playerName = element.parentNode.parentNode.children[1].innerText;
     const playerObj = { playerName: playerName };
     playerArray.push(playerObj);
