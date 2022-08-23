@@ -8,6 +8,7 @@ function myFunction() {
     }
 }
 
+
 /************************************Selected-V*****************************************/
 
 const playerArray = [];
@@ -41,13 +42,6 @@ function addToPlayerList(element) {
     playerArray.push(playerObj);
     display(playerArray);
 }
-
-// if (players.length > 5) {
-//     alert("You can only select 5 players");
-//     players.pop(); // remove last player from array
-//     console.log(players.pop());
-//     return;
-//   }
 
 
 /***********************************Budget section*************************************/
