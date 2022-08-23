@@ -8,14 +8,12 @@ function myFunction() {
     }
 }
 
-// Selected-V
+/************************************Selected-V*****************************************/
 const playerArray = [];
-
-function display(playerName){
+function display(playerName) {
     const tableBody = document.getElementById('player-list');
     tableBody.innerHTML = '';
-    for(let i = 0; i < playerName.length; i++){
-        // console.log(playerArray[i].playerName);
+    for (let i = 0; i < playerName.length; i++) {
         const name = playerArray[i].playerName;
         const tr = document.createElement('tr');
         tr.innerHTML = `
@@ -26,20 +24,15 @@ function display(playerName){
     }
 }
 
-function addToPlayerList(element){
-    // console.log(element.parentNode.parentNode.children)
-    // console.log(element.parentNode.parentNode.children[1].innerText)
+function addToPlayerList(element) {
     const playerName = element.parentNode.parentNode.children[1].innerText;
-    // console.log(playerName);
-    const playerObj = {playerName: playerName}
+    const playerObj = { playerName: playerName }
     playerArray.push(playerObj);
-    // console.log(playerArray);
-    // playerArray.push(playerName);
-    // console.log(playerArray); 
     display(playerArray);
 }
 
-// Budget section
+
+/***********************************Budget section*************************************/
 function fivePlayerExpenses() {
 
     const perPlayer = document.getElementById('per-player');

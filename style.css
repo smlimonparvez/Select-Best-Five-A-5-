@@ -249,6 +249,10 @@ section.container {
     color: goldenrod;
 }
 
+td{
+    padding: 10px;
+}
+
 hr {
     width: 60%;
     margin: auto;
